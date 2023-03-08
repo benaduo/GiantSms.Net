@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantSMS.Net", "GiantSms.Net\GiantSMS.Net.csproj", "{82CD4F5F-3859-4A3A-B973-BFF17F1DFC7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiantSms.Net", "GiantSms.Net\GiantSms.Net.csproj", "{82CD4F5F-3859-4A3A-B973-BFF17F1DFC7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantSMSConsoleApp", "GiantSmsConsoleApp\GiantSMSConsoleApp.csproj", "{1D407444-4C0A-4B86-98DB-E5197D3C9ADC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantSms.Demo", "GiantSms.Demo\GiantSms.Demo.csproj", "{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{82CD4F5F-3859-4A3A-B973-BFF17F1DFC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82CD4F5F-3859-4A3A-B973-BFF17F1DFC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82CD4F5F-3859-4A3A-B973-BFF17F1DFC7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D407444-4C0A-4B86-98DB-E5197D3C9ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D407444-4C0A-4B86-98DB-E5197D3C9ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D407444-4C0A-4B86-98DB-E5197D3C9ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D407444-4C0A-4B86-98DB-E5197D3C9ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
