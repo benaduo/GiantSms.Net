@@ -12,7 +12,7 @@ You can register for an API key by visiting https://app.giantsms.com/register.
 A valid API key from Giant SMS
 
 ## Installing
-You can install GiantSms.Net via NuGet package manager.
+You can install GiantSms.Net via NuGet package manager https://www.nuget.org/packages/GiantSms.Net/1.0.0.
 
 ## Usage
 ### Register the Service
