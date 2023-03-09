@@ -6,6 +6,8 @@ To use the library, you will need to obtain an API key from Giant SMS.
 
 You can register for an API key by visiting https://app.giantsms.com/register.
 
+Check out API documentation for various requests and reponses structure by visiting https://documenter.getpostman.com/view/16317044/TzeZF6uf. 
+
 ## Prerequisites
 .NET 5.0 or later
 
