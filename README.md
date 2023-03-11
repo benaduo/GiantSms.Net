@@ -21,9 +21,20 @@ dotnet add package GiantSms.Net --version 1.0.0
 ```
 
 ## Usage
-### Register the Service
+### Add Application Settings
 
-To use the GiantSmsService class, you need to register it as a service in your application's IServiceCollection. You can do this by calling the AddGiantSms extension method on IServiceCollection:
+To use the GiantSmsService class in your Web API, you need to add the ```GiantSmsConnection``` object to your ```appsettings.json``` file first. 
+
+```
+"GiantSmsConnection": {
+    "Username": "",
+    "Password": "",
+    "Token": "",
+    "SenderId": ""
+  }
+```
+### Register the Service
+Register it as a service in your application's IServiceCollection. You can do this by calling the AddGiantSms extension method on IServiceCollection:
 ```
     //...
     builder.Services.AddGiantSms();
