@@ -6,6 +6,8 @@ To use the library, you will need to obtain an API key from Giant SMS.
 
 You can register for an API key by visiting https://app.giantsms.com/register.
 
+Check out API documentation for various requests and reponses structure by visiting https://documenter.getpostman.com/view/16317044/TzeZF6uf. 
+
 ## Prerequisites
 .NET 5.0 or later
 
@@ -14,10 +16,25 @@ A valid API key from Giant SMS
 ## Installing
 You can install GiantSms.Net via NuGet package manager.
 
-## Usage
-### Register the Service
+```
+dotnet add package GiantSms.Net --version 1.0.0
+```
 
-To use the GiantSmsService class, you need to register it as a service in your application's IServiceCollection. You can do this by calling the AddGiantSms extension method on IServiceCollection:
+## Usage
+### Add Application Settings
+
+To use the GiantSmsService class in your Web API, you need to add the ```GiantSmsConnection``` object to your ```appsettings.json``` file first. 
+
+```
+"GiantSmsConnection": {
+    "Username": "",
+    "Password": "",
+    "Token": "",
+    "SenderId": ""
+  }
+```
+### Register the Service
+Register it as a service in your application's IServiceCollection. You can do this by calling the AddGiantSms extension method on IServiceCollection:
 ```
     //...
     builder.Services.AddGiantSms();
@@ -55,4 +72,4 @@ var result = await _giantSmsService.SendSingleMessage(phoneNumber, message);
 .NET 7.0
 RestSharp
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
