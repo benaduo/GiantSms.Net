@@ -167,6 +167,7 @@ namespace GiantSms.Net
             return JsonConvert.DeserializeObject<BaseResponse>(responseString) ?? throw new ArgumentNullException(nameof(responseString));
         }
 
+
         /// <summary>
         /// Send text messages to a single contact. 
         /// This method uses Basic Authorization header

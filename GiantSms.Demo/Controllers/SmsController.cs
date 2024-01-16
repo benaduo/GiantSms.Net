@@ -1,6 +1,7 @@
 ﻿using GiantSms.Net.Model.Responses;
 using GiantSms.Net.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using GiantSms.Net.Model.Requests;
 
 namespace GiantSms.Demo.Controllers
 {
@@ -37,7 +38,20 @@ namespace GiantSms.Demo.Controllers
             return Ok(response);
         }
 
+        [HttpPost("bulk-sms")]
+        public async Task<ActionResult<SingleSmsResponse>> SendBulkSms([FromBody] BulkMessageRequest request)
+        {
+            var result = await _giantSmsService.SendBulkMessages(new BulkMessageRequest
+            {
+                Msg = request.Msg,
+                Recipients = request.Recipients
+            });
 
+            var response = new SingleSmsResponse { Status = result.Status, Message = result.Message };
+
+            return Ok(response);
+
+        }
 
         [HttpGet("balance")]
         public async Task<ActionResult<BaseResponse>> GetBalance()

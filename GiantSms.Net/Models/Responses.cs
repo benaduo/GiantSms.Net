@@ -16,10 +16,10 @@
     }
     public class SenderIdData
     {
-        public string Name { get; set; } 
-        public string Purpose { get; set; } 
+        public string Name { get; set; }
+        public string Purpose { get; set; }
         public bool Approved { get; set; }
-        public string Approval_status { get; set; } 
+        public string Approval_status { get; set; }
     }
 
     public class SingleSmsResponse : BaseResponse
