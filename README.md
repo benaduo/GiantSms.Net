@@ -21,6 +21,10 @@ A valid API key from Giant SMS
 ## Installing
 You can install GiantSms.Net via NuGet package manager.
 
+```
+dotnet add package GiantSms.Net --version 2.0.0
+```
+
 ## Usage
 ### Register the Service
 
