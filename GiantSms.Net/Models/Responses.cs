@@ -2,17 +2,17 @@
 {
     public class BaseResponse
     {
-        public bool Status { get; set; }
-        public string Message { get; set; }
+        public bool Status { get; init; }
+        public string Message { get; init; }
     }
     public class MessageStatus
     {
-        public string Message_id { get; set; }
-        public DateTime Scheduled_date { get; set; }
-        public int Rate { get; set; }
-        public string Status { get; set; }
-        public string Reason { get; set; }
-        public DateTime Last_updated_date { get; set; }
+        public string Message_id { get; init; }
+        public DateTime Scheduled_date { get; init; }
+        public int Rate { get; init; }
+        public string Status { get; init; }
+        public string Reason { get; init; }
+        public DateTime Last_updated_date { get; init; }
     }
     public class SenderIdData
     {
@@ -24,11 +24,11 @@
 
     public class SingleSmsResponse : BaseResponse
     {
-        public MessageStatus Data { get; set; }
+        public MessageStatus Data { get; init; }
     }
 
     public class SenderIdResponse : BaseResponse
     {
-        public List<SenderIdData> Data { get; set; }
+        public List<SenderIdData> Data { get; init; }
     }
 }

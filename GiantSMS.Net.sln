@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GiantSms.Net", "GiantSms.Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantSms.Demo", "GiantSms.Demo\GiantSms.Demo.csproj", "{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiantSms.Tests", "GiantSms.Tests\GiantSms.Tests.csproj", "{BC1F5EFA-7DDC-4D90-8D64-4DA304B0954F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A94AE40A-BB91-4E91-B6D0-B55AFBFD9A21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1F5EFA-7DDC-4D90-8D64-4DA304B0954F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1F5EFA-7DDC-4D90-8D64-4DA304B0954F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1F5EFA-7DDC-4D90-8D64-4DA304B0954F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1F5EFA-7DDC-4D90-8D64-4DA304B0954F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
