@@ -1,5 +1,7 @@
 # GiantSms.Net
+GiantSms.Net is a .NET library that provides a simple and easy-to-use interface for sending SMS messages using the Giant SMS API.
 
+[![License](https://img.shields.io/github/license/benaduo/GiantSms.Net.svg)]
 [![Build Status](https://github.com/benaduo/GiantSms.Net/actions/workflows/dotnet.yml/badge.svg)](https://github.com/benaduo/GiantSms.Net/actions)
 [![NuGet](https://img.shields.io/nuget/v/GiantSms.Net.svg)](https://www.nuget.org/packages/GiantSms.Net)
 [![Target Framework](https://img.shields.io/badge/Target%20Framework-.NET%208.0-blue.svg)](https://dotnet.microsoft.com/download/dotnet/8.0)
