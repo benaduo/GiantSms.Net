@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GiantSms.Net\GiantSms.Net.csproj" />
+    <ProjectReference Include="..\..\src\GiantSMS.Net\GiantSMS.Net.csproj" />
   </ItemGroup>
 
 </Project>

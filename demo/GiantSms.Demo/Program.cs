@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddGiantSms();
+builder.Services.AddGiantSms(builder.Configuration);
 
 builder.Services.AddHttpClient();
 
