@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GiantSms.Net\GiantSms.Net.csproj" />
+    <ProjectReference Include="..\..\src\GiantSMS.Net\GiantSMS.Net.csproj" />
   </ItemGroup>
 
 </Project>

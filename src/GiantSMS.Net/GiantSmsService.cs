@@ -54,21 +54,8 @@ namespace GiantSms.Net
             var responseString = await response.Content.ReadAsStringAsync();
 
             var apiResponse = JsonConvert.DeserializeObject<SingleSmsResponse>(responseString);
-
-            return new SingleSmsResponse
-            {
-                Status = apiResponse.Status,
-                Message = apiResponse.Message,
-                Data = new MessageStatus
-                {
-                    Message_id = apiResponse.Data.Message_id,
-                    Scheduled_date = apiResponse.Data.Scheduled_date,
-                    Rate = apiResponse.Data.Rate,
-                    Status = apiResponse.Data.Status,
-                    Reason = apiResponse.Data.Reason,
-                    Last_updated_date = apiResponse.Data.Last_updated_date
-                }
-            };
+         
+            return apiResponse;
         }
 
         /// <summary>
@@ -232,20 +219,7 @@ namespace GiantSms.Net
 
             var apiResponse = JsonConvert.DeserializeObject<SingleSmsResponse>(responseString);
 
-            return new SingleSmsResponse
-            {
-                Status = apiResponse.Status,
-                Message = apiResponse.Message,
-                Data = new MessageStatus
-                {
-                    Message_id = apiResponse.Data.Message_id,
-                    Scheduled_date = apiResponse.Data.Scheduled_date,
-                    Rate = apiResponse.Data.Rate,
-                    Status = apiResponse.Data.Status,
-                    Reason = apiResponse.Data.Reason,
-                    Last_updated_date = apiResponse.Data.Last_updated_date
-                }
-            };
+            return apiResponse;
         }
 
 
@@ -267,20 +241,7 @@ namespace GiantSms.Net
 
             var apiResponse = JsonConvert.DeserializeObject<SingleSmsResponse>(responseString);
 
-            return new SingleSmsResponse
-            {
-                Status = apiResponse.Status,
-                Message = apiResponse.Message,
-                Data = new MessageStatus
-                {
-                    Message_id = apiResponse.Data.Message_id,
-                    Scheduled_date = apiResponse.Data.Scheduled_date,
-                    Rate = apiResponse.Data.Rate,
-                    Status = apiResponse.Data.Status,
-                    Reason = apiResponse.Data.Reason,
-                    Last_updated_date = apiResponse.Data.Last_updated_date
-                }
-            };
+            return apiResponse;
         }
     }
 }

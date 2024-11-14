@@ -7,12 +7,12 @@
     }
     public class MessageStatus
     {
-        public string Message_id { get; init; }
-        public DateTime Scheduled_date { get; init; }
-        public int Rate { get; init; }
-        public string Status { get; init; }
-        public string Reason { get; init; }
-        public DateTime Last_updated_date { get; init; }
+        public string? Message_id { get; init; }
+        public DateTime? Scheduled_date { get; init; }
+        public int? Rate { get; init; }
+        public string? Status { get; init; }
+        public string? Reason { get; init; }
+        public DateTime? Last_updated_date { get; init; }
     }
     public class SenderIdData
     {
@@ -24,7 +24,7 @@
 
     public class SingleSmsResponse : BaseResponse
     {
-        public MessageStatus Data { get; init; }
+        public MessageStatus? Data { get; init; }
     }
 
     public class SenderIdResponse : BaseResponse
