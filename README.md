@@ -47,7 +47,24 @@ dotnet add package GiantSms.Net --version 2.0.0
 Install-Package GiantSms.Net -Version 2.0.0
 ```
 
+
 ## Usage
+
+### Configuration
+Add the following configuration settings to your `appsettings.json` file:
+Paste the credentials on your Giant SMS account into the `appsettings.json` file under the `GiantSmsConnection` section:
+
+```json
+{
+  "GiantSmsConnection": {
+    "Username": "your_username",
+    "Password": "your_password",
+    "Token": "your_api_token",
+    "SenderId": "your_sender_id"
+  }
+}
+```
+
 ### Register the Service
 To use the `GiantSmsService` class, you need to register it as a service in your application's `IServiceCollection`. You can do this by calling the `AddGiantSms` extension method on `IServiceCollection`:
 
